@@ -1,0 +1,25 @@
+{
+  "name": "bcpl",
+  "displayName": "BCPL",
+  "description": "Language support for BCPL in different variants",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.94.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "bcpl",
+      "aliases": ["BCPL", "bcpl"],
+      "extensions": [".bcpl"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "bcpl",
+      "scopeName": "source.bcpl",
+      "path": "./syntaxes/bcpl.tmLanguage.json"
+    }]
+  }
+}
